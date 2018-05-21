@@ -1,0 +1,109 @@
+p {
+  text-align: center;
+}
+
+.navbar {
+  background-color: #000066;
+}
+
+.navbar-header a {
+  color: white;
+  font-size: 20px;
+}
+
+.navbar-btn a {
+  color: dimgray;
+}
+
+.dropdown a {
+  color: white;
+  font-size: 16px;
+}
+
+.dropdown a:hover { color: darkgray !important; }
+
+.navbar-right {
+  margin-right: 10px;
+}
+
+.navbar-btn {
+  margin-right: 15px;
+}
+
+.footer {
+  background-color: whitesmoke;
+  padding: 10px;
+}
+
+.progress {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.progress-bar {
+  background-color: lightsteelblue;
+}
+
+
+
+.rowOfButtons {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+  display: inline-block;
+}
+
+.choicebtn {
+  width: 10%;
+  color: white;
+  border: white;
+  margin-right: 0;
+}
+.choicebtn:hover {
+  color: white !important;
+}
+
+.progresstext {
+  text-align: left;
+  padding-top: 14px;
+}
+#question{
+  color: dimgray;
+  text-align: center;
+  margin-top: 15px;
+  margin-bottom: 10px;
+}
+
+#errorMessage {
+  display: none;
+}
+
+#errorMessage.show {
+  display: block;
+  text-align: center;
+}
+
+#regions_div {
+  pointer-events: none;
+  width: auto;
+  height: 70vh;
+  text-align: center;
+}
+
+
+
+#pick1 {
+  background-color: dodgerblue;
+}
+
+#pick2 {
+  background-color: royalblue;
+}
+
+#pick3 {
+  background-color: mediumpurple;
+}
+
+#pick4 {
+  background-color: mediumvioletred;
+}

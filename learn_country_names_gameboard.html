@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Learn Country Names</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+  <script src="countryCodes.js" type="text/javascript"></script>
+  <script type="text/javascript" src="gameboard.js"></script>
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+  <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+
+
+<nav class="navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header align-middle">
+      <a class="navbar-brand" href="#"><i class="fas fa-globe"></i> Learn Country Names</a>
+    </div>
+    <ul class="nav navbar-nav align-middle">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Current Region: <span id="regionStatement"></span> <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a id="region0" href="#">Northern Africa</a></li>
+          <li><a id="region1" href="#">Western Africa</a></li>
+          <li><a id="region2" href="#">Middle Africa</a></li>
+          <li><a id="region3" href="#">Eastern Africa</a></li>
+          <li><a id="region4" href="#">Southern Africa</a></li>
+          <li class="divider"></li>
+          <li><a id="region5" href="#">Northern Europe</a></li>
+          <li><a id="region6" href="#">Western Europe</a></li>
+          <li><a id="region7" href="#">Eastern Europe</a></li>
+          <li><a id="region8" href="#">Southern Europe</a></li>
+          <li class="divider"></li>
+          <li><a id="region9" href="#">Northern America</a></li>
+          <li><a id="region10" href="#">Caribbean</a></li>
+          <li><a id="region11" href="#">Central America</a></li>
+          <li><a id="region12" href="#">South America</a></li>
+          <li class="divider"></li>
+          <li><a id="region13" href="#">Central Asia</a></li>
+          <li><a id="region14" href="#">Eastern Asia</a></li>
+          <li><a id="region15" href="#">Southern Asia</a></li>
+          <li><a id="region16" href="#">South-Eastern Asia</a></li>
+          <li><a id="region17" href="#">Western Asia ("Middle East")</a></li>
+          <li class="divider"></li>
+          <li><a id="region18" href="#">Micronesia</a></li>
+          <li><a id="region19" href="#">Polynesia</a></li>
+          <li><a id="region20" href="#">Australia, New Zealand, and Melanesia</a></li>
+
+        </ul>
+      </li>
+
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li>
+        <button id="rollrandom" class="btn btn-default navbar-btn">
+            <a href="#">
+                <span class="fas fa-random"></span> Roll Random Region
+          </a>
+        </button>
+      </li>
+
+      <li>
+           <button id="replayregion" class="btn btn-default navbar-btn">
+             <a href="#">
+               <span class="fas fa-redo"></span> Replay Region
+             </a>
+           </button>
+      </li>
+
+      <li>
+           <button id="nextregion" class="btn btn-default navbar-btn">
+             <a href="#">
+               <span class="fas fa-chevron-circle-right"></span> Next Region
+             </a>
+           </button>
+      </li>
+
+
+    </ul>
+  </div>
+</nav>
+
+
+<div class="container">
+
+  <div class="row">
+
+      <h3 id="question"></h3>
+      <p id="errorMessage"></p>
+
+
+      <div class="rowOfButtons">
+        <button id="pick1" class="btn btn-outline-primary choicebtn" type="submit">1</button>
+        <button id="pick2" class="btn btn-outline-primary choicebtn" type="submit">2</button>
+        <button id="pick3" class="btn btn-outline-primary choicebtn" type="submit">3</button>
+        <button id="pick4" class="btn btn-outline-primary choicebtn" type="submit">4</button>
+      </div>
+
+      <p>Click the button whose color matches the right country. You can also use the number keys.</p>
+
+
+      <div id="regions_div"></div>
+
+
+
+  </div>
+</div>
+
+<div class="row footer">
+
+  <div class="container">
+
+    <div class="row">
+        <div class="col col-md-3">
+          <div class="progress">
+            <div id="regionProgressBar" class="progress-bar bg-success" role="progressbar" style="width: 1%" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+        </div>
+
+        <div class="col col-md-3 progresstext">
+             <span id="regionProgressSentence"></span>
+        </div>
+
+
+        <div class="col col-md-3">
+               <div class="progress">
+                 <div id="worldProgressBar" class="progress-bar bg-success" role="progressbar" style="width: 1%" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
+               </div>
+        </div>
+
+        <div class="col col-md-3 progresstext">
+             <span id="worldProgressSentence"></span>
+        </div>
+
+    </div>
+
+
+  </div>
+
+</div>
+
+
+
+</body>
+</html>
